@@ -5,10 +5,10 @@ import { usePathname } from "next/navigation";
 
 const navItems = [
   { href: "/", label: "홈", icon: "🏠" },
+  { href: "/reading", label: "읽기", icon: "🔤" },
   { href: "/grammar", label: "기본기", icon: "📖" },
   { href: "/vocabulary", label: "단어", icon: "📝" },
   { href: "/conversation", label: "회화", icon: "💬" },
-  { href: "/settings", label: "설정", icon: "⚙️" },
 ];
 
 export default function Navigation() {

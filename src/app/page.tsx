@@ -2,12 +2,20 @@ import Link from "next/link";
 
 const sections = [
   {
+    href: "/reading",
+    title: "읽기",
+    description: "히라가나 · 가타카나 마스터",
+    icon: "🔤",
+    color: "bg-rose-50 border-rose-200 hover:bg-rose-100",
+    items: ["히라가나 50음도", "가타카나 50음도", "문자 퀴즈"],
+  },
+  {
     href: "/grammar",
     title: "기본기",
     description: "문법의 기초부터 탄탄하게",
     icon: "📖",
     color: "bg-blue-50 border-blue-200 hover:bg-blue-100",
-    items: ["히라가나/가타카나", "です/ます체", "조사"],
+    items: ["です/ます체", "조사", "동사 활용"],
   },
   {
     href: "/vocabulary",
@@ -35,17 +43,17 @@ export default function Home() {
         <p className="text-gray-500">매일 조금씩, 일본어 실력을 키워보세요</p>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-3">
+      <div className="grid gap-4 grid-cols-2">
         {sections.map((section) => (
           <Link
             key={section.href}
             href={section.href}
-            className={`block p-6 rounded-xl border-2 transition-colors ${section.color}`}
+            className={`block p-5 rounded-xl border-2 transition-colors ${section.color}`}
           >
-            <div className="text-3xl mb-3">{section.icon}</div>
-            <h2 className="text-lg font-bold mb-1">{section.title}</h2>
-            <p className="text-sm text-gray-600 mb-3">{section.description}</p>
-            <ul className="text-xs text-gray-500 space-y-1">
+            <div className="text-2xl mb-2">{section.icon}</div>
+            <h2 className="text-base font-bold mb-1">{section.title}</h2>
+            <p className="text-xs text-gray-600 mb-2">{section.description}</p>
+            <ul className="text-[10px] text-gray-500 space-y-0.5">
               {section.items.map((item) => (
                 <li key={item}>· {item}</li>
               ))}

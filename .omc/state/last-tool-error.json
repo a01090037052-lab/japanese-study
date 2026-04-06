@@ -1,7 +1,7 @@
 {
-  "tool_name": "Read",
-  "tool_input_preview": "{\"file_path\":\"/Users/woohyuk/Documents/Claude/01_study/어학 공부/japanese-study/src/data/vocabulary.ts\"}",
-  "error": "File content (44546 tokens) exceeds maximum allowed tokens (10000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
-  "timestamp": "2026-04-03T21:56:23.304Z",
-  "retry_count": 2
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"gh workflow run deploy.yml --repo a01090037052-lab/japanese-study --ref main 2>&1\",\"description\":\"Re-trigger deployment workflow\"}",
+  "error": "Exit code 1\ncould not create workflow dispatch event: HTTP 422: Workflow does not have 'workflow_dispatch' trigger (https://api.github.com/repos/a01090037052-lab/japanese-study/actions/workflows/256659181/dispatches)",
+  "timestamp": "2026-04-06T03:15:30.927Z",
+  "retry_count": 1
 }

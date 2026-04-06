@@ -22,7 +22,7 @@ export default function GrammarPage() {
     <div>
       <h1 className="text-2xl font-bold mb-1">기본기 (Grammar)</h1>
       <p className="text-gray-500 mb-6">
-        레벨별로 영어 문법을 학습하세요 · 총 {grammarLessons.length}개 레슨
+        레벨별로 일본어 문법을 학습하세요 · 총 {grammarLessons.length}개 레슨
       </p>
 
       <div className="space-y-3">
