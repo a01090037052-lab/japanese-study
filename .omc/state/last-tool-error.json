@@ -1,0 +1,7 @@
+{
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"/Users/woohyuk/Documents/Claude/01_study/어학 공부/japanese-study/src/data/vocabulary.ts\"}",
+  "error": "File content (44546 tokens) exceeds maximum allowed tokens (10000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+  "timestamp": "2026-04-03T21:56:23.304Z",
+  "retry_count": 2
+}
